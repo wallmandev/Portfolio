@@ -1,0 +1,26 @@
+.hero {
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner{
+        display: grid;
+        grid-column: inner-start;
+        position: relative;
+
+        h1{
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            span{
+                color: var(--color-light);
+            }
+        }
+
+        h5{
+            color: var(--color-accent);
+            margin: 0;
+            font-weight: medium;
+        }
+    }
+}

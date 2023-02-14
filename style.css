@@ -1,0 +1,163 @@
+:root {
+  --section-gap: 8rem;
+  --section-gap-inner: calc( var(--section-gap) * 0.75 );
+  --gap-xl: 4rem;
+  --gap-l: 3rem;
+  --gap-m: 2rem;
+  --gap-s: 1rem;
+  --border-radius: 0px;
+  --color-dark: #111;
+  --color-dark-200: #444;
+  --color-dark-300: #666;
+  --color-dark-500: #888;
+  --color-dark-600: #999;
+  --color-dark-700: #b5b5b5;
+  --color-dark-800: #d5d5d5;
+  --color-dark-900: #f1f1f1;
+  --color-accent: #4190BE;
+  --color-accent-200: #009fbb;
+  --color-accent-300: #009fbb;
+  --color-accent-400: #009fbb;
+  --color-accent-500: #009fbb;
+  --color-accent-600: #009fbb;
+  --color-accent-700: #009fbb;
+  --color-accent-800: #009fbb;
+  --color-accent-900: #009fbb;
+  --color-light: #CCCCCC;
+  --color-light-200: #efead8;
+  --color-light-300: #efead8;
+  --color-light-400: #efead8;
+  --color-light-500: #efead8;
+  --color-light-600: #efead8;
+  --color-light-700: #efead8;
+  --color-light-800: #efead8;
+  --color-light-900: #efead8;
+  --color-details: #FFA500;
+  --font-sans: "Futura-PT", sans-serif;
+  --font-serif: "Raleway", sans-serif;
+  --line-height: 1.5;
+  --font-scale: 1.25;
+  --font-size: 1rem;
+  --font-size-1: var(--font-size);
+  --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
+  --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
+  --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
+  --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
+  --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+  --grid-container: minmax(128px, 1fr) [inner-start]minmax(0, 74rem)[inner-end] minmax(128px, 1fr) ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 25px;
+}
+
+p {
+  line-height: var(--line-height);
+}
+
+a {
+  line-height: var(--line-height);
+  color: var(--color-dark);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-acent);
+}
+
+li {
+  line-height: var(--line-height);
+}
+
+.header__background {
+  background: url(/src/images/Path2@2x.png);
+  height: 100vh;
+  min-width: 100%;
+  position: absolute;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px 0 80px;
+  position: relative;
+}
+.header__logo {
+  min-height: 30px;
+  min-width: 30px;
+  display: flex;
+}
+.header__menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero {
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: var(--grid-container);
+}
+.hero__inner {
+  display: grid;
+  grid-column: inner-start;
+  position: relative;
+}
+.hero__inner h1 {
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+.hero__inner h1 span {
+  color: var(--color-light);
+}
+.hero__inner h5 {
+  color: var(--color-accent);
+  margin: 0;
+  font-weight: medium;
+}
+
+.hero {
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
