@@ -1,29 +1,49 @@
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #102331;
+    display: grid;
+    grid-area: inner;
 
-    &__background {
-        background: url(/src/images/Path2@2x.png);
-        height: 100vh;
-        min-width: 100%;
-        position: absolute;
-    }
-
-    &__list{
+    &__inner{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 20px 80px 0 80px;
-        position: relative;
+        justify-content: space-between;
+        padding: 0 5rem;
+        min-height: 100px;
     }
 
     &__logo{
-        min-height: 30px;
-        min-width: 30px;
+        max-height: 60px;
+        max-width: 60px;
         display: flex;
+        img{
+            display: block;
+        }
     }
 
     &__menu{
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
+
+    }
+
+    &__button{
+        border: none;
+        background-color: transparent;
+        color: var(--color-accent);
+    }
+
+    &__button-contact{
+        border: none;
+        color: #f1f1f1;
+        padding: 6px 16px 6px 16px;
+        border-radius: 5px 5px 5px 5px;
+        border-color: var(--color-details);
+        background-color: var(--color-details);
     }
 
 }

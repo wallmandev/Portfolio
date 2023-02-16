@@ -1,0 +1,141 @@
+.projects {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    margin: var(--section-gap) 0 var(--section-gap) 0;
+
+
+    &__inner{
+        grid-column: inner;
+    }
+
+    &__header{
+        padding-bottom: 5rem;
+    }
+    
+    &__description{
+        display: flex;
+        grid-column: inner-end;
+    }
+
+    &__content{
+        margin-left: 15rem;
+        margin-top: var(--gap-l);
+
+        h5, 
+        h6, 
+        p{
+            margin: 0;
+        }
+
+        h5{
+            margin-bottom: var(--gap-s);
+        }
+
+    }
+
+    &__paragraph{
+        margin-bottom: var(--gap-m);
+    }
+
+    &__image-link{
+        img{
+            max-width: 600px;
+            min-height: 500px;
+            object-fit: cover;
+        }
+    }
+
+    &__technologies{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: var(--gap-s) 0;
+        gap: var(--gap-s);
+        margin-bottom: 0px;
+
+        img{
+            margin: 0;
+            padding: 0;
+        }
+        &-github{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding-left: 3.5rem;
+            gap: var(--gap-s);
+            text-decoration: underline;
+        }
+    }
+}
+
+.projects__todo {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    padding-bottom: var(--section-gap);
+
+    &-inner{
+        display: flex;
+        grid-column: inner;
+    }
+
+    &-header{
+        padding-bottom: 5rem;
+    }
+    
+    &-description{
+        display: flex;
+        grid-column: inner-start;
+    }
+
+    &-content{
+        margin-right: 15rem;
+        margin-top: var(--gap-l);
+
+        h5, 
+        h6, 
+        p{
+            margin: 0;
+        }
+
+        h5{
+            margin-bottom: var(--gap-s);
+        }
+
+    }
+
+    &-paragraph{
+        margin-bottom: var(--gap-m);
+    }
+
+    &-link{
+        img{
+            max-width: 600px;
+            min-height: 500px;
+            object-fit: cover;
+        }
+    }
+
+    &-technologies{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: var(--gap-s) 0;
+        gap: var(--gap-s);
+        margin-bottom: 0px;
+
+        img{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &-github{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: var(--gap-s);
+        padding-left: 3.5rem;
+        text-decoration: underline;
+    }
+    
+}

@@ -1,0 +1,61 @@
+.about{
+
+    h6,
+    h3,
+    p{
+        margin: 0;
+    }
+
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__background{
+        object-fit: cover;
+        position: absolute;
+    }
+    
+    &__inner{
+        padding-top: 10rem;
+        grid-area: inner;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+    
+    &__header{
+        color: var(--color-light);
+        letter-spacing: 1.3px;
+    }
+
+    &__description{
+        width: 400px;
+        color: #f1f1f1;
+        margin-top: var(--gap-l);
+        p{
+            font-size: var(--font-size-2);
+            letter-spacing: 0.8px;
+        }
+
+    }
+
+    &__skills{
+        letter-spacing: 1.3px;
+        padding-top: 15rem;
+        padding-left: 15rem;
+        color: var(--color-light);
+        h6{
+            margin-top: var(--gap-m);
+        }
+    }
+
+    &__skills-tech{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        width: 320px;
+        color: #f1f1f1;
+        margin-top: var(--gap-s);
+        padding-bottom: var(--section-gap);
+    }
+
+}

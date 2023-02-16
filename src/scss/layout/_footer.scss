@@ -1,0 +1,41 @@
+h3,
+h6{
+    margin: 0;
+}
+.footer{
+    margin-top: var(--section-gap);
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner{
+        margin-top: var(--gap-xl);
+        grid-area: inner;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 760px;
+
+        h3{
+            padding-bottom: var(--gap-s);
+        }
+
+        h6{
+            padding-bottom: var(--gap-l);
+        }
+    }
+
+    &__button{
+        min-width: 160px;
+        min-height: 70px;
+        margin-bottom: var(--section-gap);
+    }
+
+
+}
