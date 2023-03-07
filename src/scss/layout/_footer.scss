@@ -3,9 +3,11 @@ h6{
     margin: 0;
 }
 .footer{
+    background-color: #f1f1f1;
     margin-top: var(--section-gap);
     display: grid;
     grid-template-columns: var(--grid-container);
+    height: 100vh;
 
     &__inner{
         margin-top: var(--gap-xl);
@@ -27,15 +29,37 @@ h6{
         }
 
         h6{
+            font-weight: 400;
             padding-bottom: var(--gap-l);
         }
     }
 
     &__button{
-        min-width: 160px;
-        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 157px;
+        height: 70px;
         margin-bottom: var(--section-gap);
+        background-color: var(--color-details);
+        border: none;
+        border-radius: 5px;
+        color: #f1f1f1;
+        font-size: var(--font-size-3);
+        
     }
 
+
+}
+
+@media screen and ( max-width: 900px ) {
+    .footer{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem 0 2rem;
+    }
 
 }

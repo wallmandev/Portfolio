@@ -1,4 +1,5 @@
 .about{
+    background-color: #102331;
 
     h6,
     h3,
@@ -25,10 +26,14 @@
     &__header{
         color: var(--color-light);
         letter-spacing: 1.3px;
+
+        span{
+            color: var(--color-details);
+        }
     }
 
     &__description{
-        width: 400px;
+        width: 500px;
         color: #f1f1f1;
         margin-top: var(--gap-l);
         p{
@@ -41,10 +46,10 @@
     &__skills{
         letter-spacing: 1.3px;
         padding-top: 15rem;
-        padding-left: 15rem;
+        padding-left: 14vw;
         color: var(--color-light);
         h6{
-            margin-top: var(--gap-m);
+            margin-top: var(--gap-s);
         }
     }
 
@@ -52,10 +57,76 @@
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
-        width: 320px;
+        width: 360px;
         color: #f1f1f1;
         margin-top: var(--gap-s);
         padding-bottom: var(--section-gap);
+
+        img{
+            padding-right: 1rem;
+        }
     }
 
+}
+
+@media screen and ( max-width: 1280px ) {
+    .about,
+    .about__inner{
+        display: flex;
+        padding: var(--gap-l) 6rem 0 4rem;
+    }
+
+    .about__skills{
+        padding-left: 12vw;
+    }
+
+    .about__skills-tech{
+        padding-bottom: 0;
+    }
+}   
+
+@media screen and ( max-width: 1180px ) {
+    .about,
+    .about__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem 5rem 2rem 5rem;
+        width: 100%;
+    }
+
+    
+
+    .about__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about__skills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 8rem 0 0 0;
+    }
+
+    .about__skills-tech{
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .about__description{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 900px ) {
+    .about,
+    .about__inner{
+        padding: 2rem 1rem 2rem 1rem;
+    }
 }
