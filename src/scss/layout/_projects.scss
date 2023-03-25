@@ -3,6 +3,7 @@
     background-color: #f1f1f1;
     display: grid;
     grid-template-columns: var(--grid-container);
+    border-top: 50px transparent solid;
     
     &-inner{
         display: flex;
@@ -300,8 +301,8 @@
     }
 
     .projects__header-inner{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         
         h3{
             font-size: var(--font-size-5);

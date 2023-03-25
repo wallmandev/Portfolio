@@ -72,6 +72,7 @@
 @media screen and ( max-width: 1280px ) {
     .about,
     .about__inner{
+        border-top: 30px transparent solid;
         display: flex;
         padding: var(--gap-l) 6rem 0 4rem;
     }
@@ -114,6 +115,7 @@
 
     .about__skills-tech{
         padding-top: 2rem;
+        max-width: 300px;
         width: 100%;
     }
 
@@ -127,6 +129,6 @@
 @media screen and ( max-width: 900px ) {
     .about,
     .about__inner{
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 2rem 2rem 2rem 2rem;
     }
 }
